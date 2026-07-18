@@ -61,59 +61,85 @@
         
         .ukraine-support {
             margin-top: 40px;
-            padding-top: 20px;
+            padding-top: 25px;
             border-top: 1px solid #eee;
-            font-size: 0.9em;
-            color: #555;
         }
         .ukraine-support h2 {
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: #2c3e50;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
         }
-        .ukraine-support ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        .ukraine-support p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
         }
-        .ukraine-support li {
-            margin-bottom: 8px;
+        .charity-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
-        .ukraine-support a {
-            color: #2980b9;
+        .charity-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
             text-decoration: none;
+            color: #333;
             font-weight: 500;
+            transition: all 0.2s ease;
+            gap: 12px;
         }
-        .ukraine-support a:hover {
-            text-decoration: underline;
+        .charity-card:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .charity-logo {
+            height: 24px;
+            width: auto;
+            object-fit: contain;
         }
         .flag {
             display: inline-block;
-            width: 20px;
-            height: 14px;
+            width: 24px;
+            height: 16px;
             background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);
-            border-radius: 2px;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Domena <strong>usuchej.pl</strong> jest na sprzedaż</h1>
-        <p>Jesteś zainteresowany zakupem tej domeny? Skontaktuj się ze mną, aby omówić szczegóły i złożyć ofertę.</p>
+        <p>Jesteś zainteresowany zakupem tej domeny? <strong>Nie oczekuję wygórowanej kwoty.</strong> Skontaktuj się ze mną, aby omówić szczegóły i zaproponować swoją cenę.</p>
         <a href="mailto:antekmarkiewicz@icloud.com?subject=Oferta zakupu domeny usuchej.pl" class="email-link">Napisz: antekmarkiewicz@icloud.com</a>
         
         <div class="ukraine-support">
             <h2><span class="flag"></span> Wspierajmy Ukrainę</h2>
             <p>Zamiast (lub oprócz) kupowania domeny, rozważ wsparcie jednej ze zweryfikowanych zbiórek:</p>
-            <ul>
-                <li><a href="https://www.siepomaga.pl/ukraina" target="_blank" rel="noopener noreferrer">Siepomaga.pl - Solidarni z Ukrainą</a></li>
-                <li><a href="https://pcpm.org.pl/ukraina" target="_blank" rel="noopener noreferrer">PCPM - Pomoc dla Ukrainy</a></li>
-                <li><a href="https://pck.pl/wspieraj-nas/" target="_blank" rel="noopener noreferrer">Polski Czerwony Krzyż (PCK)</a></li>
-            </ul>
+            <div class="charity-cards">
+                <a href="https://www.siepomaga.pl/ukraina" target="_blank" rel="noopener noreferrer" class="charity-card">
+                    <img src="https://www.siepomaga.pl/assets/logo-b94f0e6e7654a9d701ed6f01c3d19fb53787347a5925e0bc08e3d3663a89e900.svg" alt="Siepomaga Logo" class="charity-logo" style="height: 20px;">
+                    Solidarni z Ukrainą
+                </a>
+                <a href="https://pcpm.org.pl/ukraina" target="_blank" rel="noopener noreferrer" class="charity-card">
+                    <img src="https://pcpm.org.pl/wp-content/themes/pcpm/images/logo.svg" alt="PCPM Logo" class="charity-logo" style="height: 26px;">
+                    Pomoc dla Ukrainy
+                </a>
+                <a href="https://pck.pl/wspieraj-nas/" target="_blank" rel="noopener noreferrer" class="charity-card">
+                    <img src="https://pck.pl/wp-content/uploads/2022/02/Znak-PCK.svg" alt="PCK Logo" class="charity-logo" style="height: 28px;">
+                    Polski Czerwony Krzyż
+                </a>
+            </div>
         </div>
     </div>
 </body>
